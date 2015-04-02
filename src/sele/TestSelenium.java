@@ -333,7 +333,7 @@ public class TestSelenium  {
 		
 	}
 	
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface, 
         // not the implementation.
@@ -372,6 +372,8 @@ public class TestSelenium  {
         
         //Close the browser
         driver.quit();
+        TestSelenium t = new TestSelenium();
+        t.getAboutUser("ณัฐ อำนวยผลวิวัฒน์");
     }
 }
 
